@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*variables*/
+body {
+  background: #171C28;
+  color: #e7e7e7;
+  font-family: "Albert Sans", sans-serif;
+}
+
+.switch-toggle {
+  display: flex;
+  justify-content: end;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background-color: rgb(134, 134, 134);
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border-radius: 30px;
+  background-color: #fff;
+  left: 5px;
+  top: 3px;
+  transition: all 0.4s;
+}
+
+input[type=checkbox]:checked + .switch::after {
+  transform: translateX(20px);
+}
+
+input[type=checkbox]:checked + .switch {
+  background: rgb(77, 33, 107);
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.manito {
+  display: inline-block;
+  background-image: url("../img/hand.png");
+  vertical-align: text-top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  height: 35px;
+}

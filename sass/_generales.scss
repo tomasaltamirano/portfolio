@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*variables*/
+$background-color-dark: #171C28;
+$color-fuente-dark: #e7e7e7;
+
+$background-color: #fff;
+$color-fuente: #171C28;
+
+$font: 'Albert Sans', sans-serif;
+
+body{
+  background: $background-color-dark;
+  color: $color-fuente-dark;
+  font-family: $font;
+}
+
