@@ -1,3 +1,73 @@
+.intro{
+  height: 100vh;
+  padding: 7rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .hello{
+    font-size: 4rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+  .description{
+    font-size: 3rem;
+    font-weight: 300;
+    .name{
+      display: block;
+      font-weight: 700;
+      margin: 1.8rem 0;
+    }
+  }
+  .contact{
+    font-size: 2.1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+    .mail{
+      
+      .bx{
+        color: #1dd3b0;
+        font-size: 3rem;
+      }
+      .mail-to{
+        text-decoration: none;
+        color: #e7e7e7;
+        font-size: 2.1rem;
+        vertical-align: top;
+        font-weight: 400;
+        border-bottom: 3px solid #007bff;
+        transition: all .2s ease-in-out;
+        padding: 2px;
+        display: inline-block;
+        &:hover{
+          -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
+          box-shadow: inset 0 -33px 0 0 #007bff;
+        }
+      }
+    }
+
+    .intro__cv{
+      text-decoration: none;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      padding: 10PX;
+      color: #E7E7E7;
+      margin-left: 10px;
+      
+      &:hover{
+        background-color: #007bff;
+        border-color: #E7E7E7;
+      }
+    }
+  }
+  
+}
 
 
 .manito{

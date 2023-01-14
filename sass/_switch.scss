@@ -1,6 +1,21 @@
 .switch-toggle{
   display: flex;
   justify-content: end;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  .sun{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 5px;
+
+  }
+  .moon{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+  }
 }
 
 .switch{
@@ -8,7 +23,7 @@
   display: inline-block;
   width: 50px;
   height: 25px;
-  background-color: rgb(134, 134, 134);
+  background-color: rgb(153, 153, 153);
   border-radius: 40px;
   cursor: pointer;
 }
@@ -31,7 +46,7 @@ input[type="checkbox"]:checked + .switch::after{
 }
 
 input[type="checkbox"]:checked + .switch{
-  background: rgb(77, 33, 107);
+  background: #1dd3b0;
 }
 
 .offscreen{

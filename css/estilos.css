@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 /*variables*/
 body {
   background: #171C28;
@@ -14,6 +18,20 @@ body {
 .switch-toggle {
   display: flex;
   justify-content: end;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.switch-toggle .sun {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.switch-toggle .moon {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 5px;
 }
 
 .switch {
@@ -21,7 +39,7 @@ body {
   display: inline-block;
   width: 50px;
   height: 25px;
-  background-color: rgb(134, 134, 134);
+  background-color: rgb(153, 153, 153);
   border-radius: 40px;
   cursor: pointer;
 }
@@ -43,12 +61,76 @@ input[type=checkbox]:checked + .switch::after {
 }
 
 input[type=checkbox]:checked + .switch {
-  background: rgb(77, 33, 107);
+  background: #1dd3b0;
 }
 
 .offscreen {
   position: absolute;
   left: -9999px;
+}
+
+.intro {
+  height: 100vh;
+  padding: 7rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.intro .hello {
+  font-size: 4rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+.intro .description {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.intro .description .name {
+  display: block;
+  font-weight: 700;
+  margin: 1.8rem 0;
+}
+.intro .contact {
+  font-size: 2.1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+.intro .contact .mail .bx {
+  color: #1dd3b0;
+  font-size: 3rem;
+}
+.intro .contact .mail .mail-to {
+  text-decoration: none;
+  color: #e7e7e7;
+  font-size: 2.1rem;
+  vertical-align: top;
+  font-weight: 400;
+  border-bottom: 3px solid #007bff;
+  transition: all 0.2s ease-in-out;
+  padding: 2px;
+  display: inline-block;
+}
+.intro .contact .mail .mail-to:hover {
+  -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
+  box-shadow: inset 0 -33px 0 0 #007bff;
+}
+.intro .contact .intro__cv {
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 10PX;
+  color: #E7E7E7;
+  margin-left: 10px;
+}
+.intro .contact .intro__cv:hover {
+  background-color: #007bff;
+  border-color: #E7E7E7;
 }
 
 .manito {
@@ -60,4 +142,155 @@ input[type=checkbox]:checked + .switch {
   background-position: center;
   width: 35px;
   height: 35px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 10rem;
+  font-size: 1.6rem;
+  color: #dbdbdb;
+}
+.section .section__title {
+  flex-shrink: 0;
+  width: 200px;
+  margin-right: 70px;
+  color: #007bff;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.section .section__content {
+  line-height: 1.8;
+  font-weight: 300;
+  max-width: 650px;
+  width: 100%;
+}
+.section .section__content .destacar {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.section .section__content .skills__icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section .section__content .skills__icons .bx {
+  font-size: 5rem;
+}
+
+.projects .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+.projects .project .project__img {
+  max-width: 500px;
+  margin: 0;
+}
+.projects .project .project__img img {
+  max-width: 100%;
+  width: 100%;
+  vertical-align: bottom;
+}
+.projects .project .project__caption {
+  flex-shrink: 0;
+  max-width: 200px;
+  width: 100%;
+  margin: 0;
+}
+.projects .project .project__caption .project__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.projects .project .project__caption p {
+  font-weight: 300;
+}
+.projects .project:last-child {
+  margin-bottom: 0;
+}
+
+.other-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.other-projects .project {
+  margin-bottom: 5rem;
+}
+.other-projects .project .tech__used {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+.other-projects .project .tech__used .tech__used__item {
+  border: 1px solid #2196f3;
+  font-size: 1.1rem;
+  margin: 3px 3px 3px 0;
+  padding: 2px 7px;
+  font-weight: 700;
+  color: #2196f3;
+  border-radius: 5px;
+  text-align: center;
+}
+.other-projects .project .project__name {
+  margin-bottom: 1rem;
+}
+.other-projects .project .project__name a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.other-projects .project p {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 8rem;
+}
+.footer .footer__copyright {
+  font-size: 1.1rem;
+}
+.footer .footer__copyright .designed {
+  font-weight: 300;
+}
+.footer .footer__copyright .name {
+  text-align: left;
+  margin-top: 10px;
+}
+.footer .footer__copyright .name .bx {
+  font-size: 1.6rem;
+}
+.footer .footer__links a {
+  color: #007bff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 15px;
+  outline: 0;
+  transition: all 0.1s ease;
+}
+.footer .footer__links a:hover {
+  border-bottom: 2px solid #007bff;
+}
+.footer .footer__links a .text {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+.footer .footer__links a .bx {
+  display: none;
 }

@@ -5,49 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomas Altamirano</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <div class="switch-toggle">
-        <div class="sun"></div>
+        <div class="sun">
+            <i class='bx bx-sun' ></i>
+        </div>
         <input type="checkbox" class="offscreen" id="toggle">
         <label for="toggle" class="switch"></label>
-        <div class="moon"></div>
+        <div class="moon">
+            <i class='bx bx-moon' ></i>
+        </div>
     </div>
     <header class="intro">
         <h1 class="hello">Hola!  <small class="manito"></small></h1>
         
-        <h2 class="description">Soy <span class="name">Tomás</span> Frontend developer </h2>
+        <h2 class="description">Me llamo Tomás <span class="name"> soy Frontend developer</span> intento desarrollar sitios que combinen la simpleza con lo funcional <span class="rocket-img"><img src="img/rocket.png" alt="rocket" width="30"></span></h2>
         <h3 class="contact">Contactame! 
             <span class="mail"> 
                 <i class='bx bx-right-arrow-alt bx-tada-hover '></i>
-                <a href="mailto:tomasnehuenaltamirano@gmail.com">tomasnehuenaltamirano@gmail.com</a> 
+                <a href="mailto:tomasnehuenaltamirano@gmail.com" class="mail-to">tomasnehuenaltamirano@gmail.com</a> 
             </span>
+            <a href="#"class="intro__cv">
+                <span><i class='bx bx-file-blank' ></i></span>
+                CV
+            </a>
         </h3>
+        
     </header>
     <main class="main-container">
         <section class="section about-me">
             <div class="section__title">Acerca de mi</div>
             <div class="section__content">
-                <p>Me llamo Tomás Altamirano, tengo 23 años y vivo en Buenos Aires, actualmente me encuentro tratando de dominar JavaScript e incursionando en React. Me gusta la combinacion de lo bonito con lo funcional, asi que trato de apuntar a eso siempre.</p>
+                <p>Me llamo <span class="destacar">Tomás Altamirano</span>, tengo 23 años y vivo en Buenos Aires, actualmente me encuentro tratando de <span class="destacar">dominar JavaScript</span> e incursionando en React. Me gusta la combinacion de lo bonito con lo funcional, asi que trato de apuntar a eso siempre.</p>
                 <br>
-                <p>Mi camino hacia el frontend inicia en tiempos de pandemia cuando salieron a relucir los empleos home office, comencé haciendo mis primeras maquetas en HTML y CSS de manera autodidacta, mas tarde, con cursos pagos y clases en vivo para resolver dudas que me iban surgiendo sobre Desarrollo Web y Javascript principalmente. Hoy me encuentro buscando mi primer experiencia laboral con miedos y dudas pero siempre con intenciones de seguir aprendiendo</p>
+                <p>Mi camino hacia el frontend inicia en tiempos de pandemia cuando salieron a relucir los empleos home office, comencé haciendo mis primeras maquetas en <span class="destacar">HTML y CSS de manera autodidacta</span>, mas tarde, con cursos pagos y clases en vivo para resolver dudas que me iban surgiendo sobre Desarrollo Web y Javascript principalmente. Hoy me encuentro <span class="destacar">buscando mi primer experiencia laboral</span> con miedos y dudas pero siempre con intenciones de seguir aprendiendo</p>
                 <br>
-                <p>Si no estoy en la computadora probablemente me encuentre cocinando algo dulce acompañado de un rico café, pasando tiempo con mis mascotas o haciendo deporte</p>
+                <p><span class="destacar">Si no estoy en la computadora</span> probablemente me encuentre cocinando algo dulce acompañado de un rico café, pasando tiempo con mis mascotas o haciendo deporte</p>
             </div>
         </section>
         
         <section class="section skills">
             <div class="section__title">Skills</div>
             <div class="section__content">
-                <i class='bx bxl-html5 bx-tada-hover bx-lg'></i>
-                <i class='bx bxl-css3 bx-tada-hover bx-lg'></i>
-                <i class='bx bxl-sass bx-tada-hover bx-lg'></i>
-                <i class='bx bxl-bootstrap bx-tada-hover bx-lg'></i>
-                <i class='bx bxl-javascript bx-tada-hover bx-lg'></i>
-                <i class='bx bxl-react bx-tada-hover bx-lg'></i>
-                <i class='bx bxl-git bx-tada-hover bx-lg'></i>
-                <i class='bx bxl-figma bx-tada-hover bx-lg'></i>
+                <div class="skills__icons">
+                    <i class='bx bxl-html5 bx-tada-hover '></i>
+                    <i class='bx bxl-css3 bx-tada-hover '></i>
+                    <i class='bx bxl-sass bx-tada-hover '></i>
+                    <i class='bx bxl-bootstrap bx-tada-hover '></i>
+                    <i class='bx bxl-javascript bx-tada-hover '></i>
+                    <i class='bx bxl-react bx-tada-hover '></i>
+                    <i class='bx bxl-git bx-tada-hover '></i>
+                    <i class='bx bxl-figma bx-tada-hover '></i>
+                </div>
+                
             </div>
         </section>
 
@@ -56,7 +69,7 @@
             <div class="section__content">
                 <div class="project ecommerce">
                     <figure class="project__img">
-                        <a href="https://tomasaltamirano.github.io/ecommerce-CoderHouse/" target="_blank"><img src="img/ecommerce.png" alt="Screen e-commerce" width="500"></a>
+                        <a href="https://tomasaltamirano.github.io/ecommerce-CoderHouse/" target="_blank"><img src="img/ecommerce.png" alt="Screen e-commerce" ></a>
                     </figure>
                     <figcaption class="project__caption">
                         <div class="project__name">E-commerce</div>
@@ -66,7 +79,7 @@
 
                 <div class="project simulador">
                     <figure class="project__img">
-                        <a href="https://simulador-emails.vercel.app/" target="_blank"><img src="img/simulador.png" alt="Imagen simulador-emails" width="500"></a>
+                        <a href="https://simulador-emails.vercel.app/" target="_blank"><img src="img/simulador.png" alt="Imagen simulador-emails" ></a>
                     </figure>
                     <figcaption class="project__caption">
                         <div class="project__name">Simulador de e-mails</div>
@@ -76,7 +89,7 @@
                 
                 <div class="project pokedex">
                     <figure class="project__img">
-                        <a href="https://pokedex-three-rust.vercel.app/" target="_blank"><img src="img/pokedex.png" alt="Imagen pokedex" width="500"></a>
+                        <a href="https://pokedex-three-rust.vercel.app/" target="_blank"><img src="img/pokedex.png" alt="Imagen pokedex" ></a>
                     </figure>
                     <figcaption class="project__caption">
                         <div class="project__name">Pokédex</div>
@@ -91,6 +104,7 @@
             <div class="section__content">
                 <div class="project">
                     <div class="project__name"><a href="https://tomasaltamirano.github.io/encriptador-alura/" target="_blank">Encriptador Alura</a></div>
+                    
                     <p>Proyecto para el desafio Frontend del programa gratuito de formacion en ORACLE + Alura Latam</p>
                     <div class="tech__used">
                         <span class="tech__used__item">HTML</span>
@@ -125,33 +139,33 @@
     </main>
     <footer class="footer">
         <div class="footer__copyright">
-            <h3 class="designed">Diseñado y desarrollado por</h3>
+            <h3 class="designed">Desarrollado por</h3>
             <h3 class="name">Tomás Altamirano - 2023</h3>
         </div>
         <div class="footer__links">
             <a href="mailto:tomasnehuenaltamirano@gmail.com" title="email" target="_blank">
-                <span>email</span>
+                <span class="text">email</span>
                 <i class='bx bxs-envelope'></i>
             </a>
 
             <a href="https://twitter.com/tomaltamirano_" title="twitter" target="_blank">
-                <span>twitter</span>
+                <span class="text">twitter</span>
                 <i class='bx bxl-twitter' ></i>
             </a>
 
              <a href="https://github.com/tomasaltamirano" title="github" target="_blank">
-                <span>github</span>
+                <span class="text">github</span>
                 <i class='bx bxl-github' ></i>
             </a>
 
              <a href="https://www.linkedin.com/in/tomasaltamirano/" title="linkedin" target="_blank">
-                <span>linkedin</span>
+                <span class="text">linkedin</span>
                 <i class='bx bxl-linkedin-square' ></i>
             </a>
         </div>
-        <div class="footer__top">
+        <!-- <div class="footer__top">
             <a href="#"><i class='bx bx-up-arrow-circle'></i></a>
-        </div>
+        </div> -->
     </footer>
    
     
