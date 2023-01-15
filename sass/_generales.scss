@@ -9,17 +9,49 @@ html{
 }
 
 /*variables*/
-$background-color-dark: #171C28;
-$color-fuente-dark: #e7e7e7;
+$bg-dark: #171C28;
+$fuente-dark: #e7e7e7;
 
-$background-color: #fff;
-$color-fuente: #171C28;
+$bg-light: #fff;
+$color-fuente-light: #171C28;
 
 $font: 'Albert Sans', sans-serif;
 
 body{
-  background: $background-color-dark;
-  color: $color-fuente-dark;
+  background-color: $bg-light;
+  color: $color-fuente-light;
   font-family: $font;
+  
 }
 
+.dark-mode{
+  background-color: $bg-dark;
+  color: $fuente-dark;
+  a{
+          color: #fff;
+  }
+   .other-projects{
+    .project{
+      .project__name{
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+  #mail-to{
+    color: $fuente-dark;
+  }
+}
+
+// .dark-mode{
+//   .other-projects{
+//     .project{
+//       .project__name{
+//         a{
+//           color: #fff;
+//         }
+//       }
+//     }
+//   }
+// }

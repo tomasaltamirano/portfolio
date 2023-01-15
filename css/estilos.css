@@ -10,9 +10,23 @@ html {
 
 /*variables*/
 body {
-  background: #171C28;
-  color: #e7e7e7;
+  background-color: #fff;
+  color: #171C28;
   font-family: "Albert Sans", sans-serif;
+}
+
+.dark-mode {
+  background-color: #171C28;
+  color: #e7e7e7;
+}
+.dark-mode a {
+  color: #fff;
+}
+.dark-mode .other-projects .project .project__name a {
+  color: #fff;
+}
+.dark-mode #mail-to {
+  color: #e7e7e7;
 }
 
 .switch-toggle {
@@ -24,12 +38,10 @@ body {
   right: 30px;
 }
 .switch-toggle .sun {
-  color: #fff;
   font-size: 20px;
   margin-right: 5px;
 }
 .switch-toggle .moon {
-  color: #fff;
   font-size: 20px;
   margin-left: 5px;
 }
@@ -97,6 +109,7 @@ input[type=checkbox]:checked + .switch {
   font-size: 2.1rem;
   font-weight: 400;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
   justify-content: flex-start;
@@ -107,7 +120,7 @@ input[type=checkbox]:checked + .switch {
 }
 .intro .contact .mail .mail-to {
   text-decoration: none;
-  color: #e7e7e7;
+  color: #000;
   font-size: 2.1rem;
   vertical-align: top;
   font-weight: 400;
@@ -125,12 +138,10 @@ input[type=checkbox]:checked + .switch {
   border: 1px solid #007bff;
   border-radius: 5px;
   padding: 10PX;
-  color: #E7E7E7;
   margin-left: 10px;
 }
 .intro .contact .intro__cv:hover {
   background-color: #007bff;
-  border-color: #E7E7E7;
 }
 
 .manito {
@@ -149,7 +160,6 @@ input[type=checkbox]:checked + .switch {
   justify-content: center;
   padding: 10rem;
   font-size: 1.6rem;
-  color: #dbdbdb;
 }
 .section .section__title {
   flex-shrink: 0;
@@ -245,7 +255,7 @@ input[type=checkbox]:checked + .switch {
 }
 .other-projects .project .project__name a {
   text-decoration: none;
-  color: #fff;
+  color: #171C28;
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -258,7 +268,7 @@ input[type=checkbox]:checked + .switch {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 5rem 8rem;
 }
 .footer .footer__copyright {
@@ -293,4 +303,107 @@ input[type=checkbox]:checked + .switch {
 }
 .footer .footer__links a .bx {
   display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .intro {
+    padding: 6rem 7rem;
+  }
+  .intro .hello {
+    font-size: 3.3rem;
+  }
+  .intro .description {
+    font-size: 2.8rem;
+    max-width: 700px;
+  }
+  .intro .contact {
+    font-size: 1.8rem;
+  }
+  .project .project__caption p {
+    font-size: 1.6rem;
+  }
+  .other-projects .section__title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    padding: 5rem 6rem;
+  }
+  .intro .contact .mail .bx {
+    font-size: 2.6rem;
+  }
+  .intro .contact .mail .mail-to {
+    font-size: 1.5rem;
+  }
+  .intro .contact .intro__cv {
+    margin: 0;
+    padding: 5px;
+  }
+  .section {
+    padding: 5rem 6rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section .section__title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .projects .project {
+    flex-direction: column;
+    margin-bottom: 6rem;
+  }
+  .projects .project .project__caption {
+    max-width: 400px;
+  }
+  .footer {
+    padding: 3rem 2rem;
+  }
+  .footer .footer__links a .text {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro {
+    padding: 5rem 2rem;
+  }
+  .intro .hello {
+    font-size: 2.5rem;
+  }
+  .intro .description {
+    font-size: 2.2rem;
+  }
+  .intro .mail .bx {
+    display: none;
+  }
+  .section {
+    padding: 5rem 3rem;
+  }
+  .section .section__content p {
+    font-size: 1.5rem;
+  }
+  .section .section__content p .destacar {
+    font-size: 1.5rem;
+  }
+  .section .section__content .skills__icons {
+    justify-content: center;
+  }
+  .project .project__caption p {
+    font-size: 1.4rem;
+  }
+  .footer {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .footer__links a .text {
+    display: none;
+  }
+  .footer .footer__links a .bx {
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+  .footer .footer__copyright {
+    display: none;
+  }
 }

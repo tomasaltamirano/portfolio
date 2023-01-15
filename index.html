@@ -6,12 +6,13 @@
     <title>Tomas Altamirano</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <div class="switch-toggle">
         <div class="sun">
-            <i class='bx bx-sun' ></i>
+            <i class='bx bx-sun'></i>
         </div>
         <input type="checkbox" class="offscreen" id="toggle">
         <label for="toggle" class="switch"></label>
@@ -26,7 +27,7 @@
         <h3 class="contact">Contactame! 
             <span class="mail"> 
                 <i class='bx bx-right-arrow-alt bx-tada-hover '></i>
-                <a href="mailto:tomasnehuenaltamirano@gmail.com" class="mail-to">tomasnehuenaltamirano@gmail.com</a> 
+                <a href="mailto:tomasnehuenaltamirano@gmail.com" class="mail-to" id="mail-to">tomasnehuenaltamirano@gmail.com</a> 
             </span>
             <a href="#"class="intro__cv">
                 <span><i class='bx bx-file-blank' ></i></span>
@@ -102,8 +103,13 @@
         <section class="section other-projects">
             <div class="section__title">Otros proyectos</div>
             <div class="section__content">
-                <div class="project">
-                    <div class="project__name"><a href="https://tomasaltamirano.github.io/encriptador-alura/" target="_blank">Encriptador Alura</a></div>
+                <div class="project alura">
+                    <div class="project__name">
+                        <a href="https://tomasaltamirano.github.io/encriptador-alura/" target="_blank">
+                            <span class="names">Encriptador Alura </span>
+                            <i class='bx bx-export bx-tada-hover bx-md'></i>
+                        </a>
+                    </div>
                     
                     <p>Proyecto para el desafio Frontend del programa gratuito de formacion en ORACLE + Alura Latam</p>
                     <div class="tech__used">
@@ -114,8 +120,14 @@
                     </div>
                 </div>
 
-                <div class="project">
-                    <div class="project__name"><a href="https://coffee-house-coder.netlify.app/" target="_blank">Coffee House</a></div>
+                <div class="project coffee">
+                    <div class="project__name">
+                        <a href="https://coffee-house-coder.netlify.app/" target="_blank" >
+                            <span class="names">Coffee House</span>
+                            <i class='bx bx-export bx-tada-hover bx-md'></i>
+                        </a>
+                        
+                    </div>
                     <p>Proyecto final integrador del curso de Desarrollo web de CoderHouse, es un sitio web estatico sobre una cafetería</p>
                     <div class="tech__used">
                         <span class="tech__used__item">HTML</span>
@@ -125,8 +137,13 @@
                     </div>
                 </div>
 
-                <div class="project">
-                    <div class="project__name"><a href="https://tomasaltamirano.github.io/Product-preview-card/" target="_blank">Product preview Card</a></div>
+                <div class="project card">
+                    <div class="project__name ">
+                        <a href="https://tomasaltamirano.github.io/Product-preview-card/" target="_blank" >Product <span class="names">preview Card </span>
+                            <i class='bx bx-export bx-tada-hover bx-md'></i>
+                        </a>
+                        
+                    </div>
                     <p>Pequeño proyecto de parte de Frontend Mentor para practicar mis habilidades en CSS</p>
                     <div class="tech__used">
                         <span class="tech__used__item">HTML</span>
@@ -163,12 +180,9 @@
                 <i class='bx bxl-linkedin-square' ></i>
             </a>
         </div>
-        <!-- <div class="footer__top">
-            <a href="#"><i class='bx bx-up-arrow-circle'></i></a>
-        </div> -->
     </footer>
    
     
-
+    <script src="js/main.js"></script>
 </body>
 </html>

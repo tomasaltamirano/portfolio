@@ -1,0 +1,146 @@
+@media screen and (max-width: 992px){
+    .intro{
+        padding: 6rem 7rem;
+        .hello{
+            font-size: 3.3rem;
+        }
+        .description{
+            font-size: 2.8rem;
+            max-width: 700px;
+        }
+
+        .contact{
+            font-size: 1.8rem;
+        }
+    }
+    
+    .project{
+        .project__caption{
+            p{
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .other-projects{
+        .section__title{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .intro{
+        padding: 5rem 6rem;
+        .contact{
+            .mail{
+                .bx{
+                    font-size: 2.6rem;
+                }
+                .mail-to{
+                    font-size: 1.5rem;
+                }
+            }
+            .intro__cv{
+                margin: 0;
+                padding: 5px;
+            }
+        }
+    }
+    .section{
+        padding: 5rem 6rem;
+        flex-direction: column;
+        align-items: center;
+        .section__title{
+            text-align: center;
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+
+    .projects{
+        .project{
+            flex-direction: column;
+            margin-bottom: 6rem;
+            .project__caption{
+                max-width: 400px;
+            }
+        }
+    }
+
+    .footer{
+        padding: 3rem 2rem;
+        .footer__links{
+            a{
+                .text{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 600px){
+    .intro{
+        padding: 5rem 2rem;
+        .hello{
+            font-size: 2.5rem;
+        }
+        .description{
+            font-size: 2.2rem;
+        }
+
+        .mail{
+            .bx{
+                display: none;
+            }
+        }
+    }
+
+    .section{
+        padding: 5rem 3rem;
+        .section__content{
+            p{
+                font-size: 1.5rem;
+                .destacar{
+                    font-size: 1.5rem;
+                }
+            }
+            
+            .skills__icons{
+                justify-content: center;
+            }
+        }
+    }
+    
+    
+
+    .project{
+        .project__caption{
+            p{
+                font-size: 1.4rem;
+            }
+        }
+    } 
+
+    .footer{
+        align-items: center;
+        justify-content: center;
+        .footer__links{
+            a{
+                .text{
+                    display: none;
+                }
+                .bx{
+                    display: inline-block;
+                    font-size: 2.5rem;
+                }
+            }
+           
+        }
+        .footer__copyright{
+            display: none;
+        }
+    }
+}
+
