@@ -1,7 +1,8 @@
-@use 'generales';
-@use 'switch';
-@use 'header';
-@use 'about';
-@use 'projects';
-@use 'footer';
-@use 'mediaqueries';
+@import 'generales';
+@import 'navbar';
+@import 'switch';
+@import 'header';
+@import 'about';
+@import 'projects';
+@import 'footer';
+@import'mediaqueries';

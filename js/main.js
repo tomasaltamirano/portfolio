@@ -1,6 +1,17 @@
 const body = document.querySelector('body');
 const btnSwitch = document.querySelector('.switch');
+const nav = document.querySelector('#nav');
+const abrir = document.querySelector('#abrir');
+const cerrar = document.querySelector('#cerrar');
 
+
+abrir.addEventListener('click', () =>{
+    nav.classList.add('visible')
+});
+
+cerrar.addEventListener('click', () =>{
+    nav.classList.remove('visible')
+});
 
 
 btnSwitch.addEventListener('click', () => {
@@ -10,16 +21,16 @@ btnSwitch.addEventListener('click', () => {
 
 
 
-ScrollReveal().reveal('.intro',{ delay: 300 });
-ScrollReveal({ reset: true }).reveal('.about-me',{ delay: 300 });
-ScrollReveal({ reset: true }).reveal('.skills',{ delay: 300 });
-ScrollReveal({ reset: true }).reveal('.ecommerce',{ delay: 300 });
-ScrollReveal({ reset: true }).reveal('.simulador',{ delay: 300 });
-ScrollReveal({ reset: true }).reveal('.pokedex',{ delay: 300 });
+ScrollReveal().reveal('.intro',{ delay: 360 });
+ScrollReveal().reveal('.about-me',{ delay: 360 });
+ScrollReveal().reveal('.skills',{ delay: 360 });
+ScrollReveal().reveal('.ecommerce',{ delay: 360 });
+ScrollReveal().reveal('.simulador',{ delay: 360 });
+ScrollReveal().reveal('.pokedex',{ delay: 360 });
 
-ScrollReveal({ reset: true }).reveal('.alura',{ delay: 300 });
-ScrollReveal({ reset: true }).reveal('.coffee',{ delay: 300 });
-ScrollReveal({ reset: true }).reveal('.card',{ delay: 300 });
+ScrollReveal({ reset: true }).reveal('.alura',{ delay: 360 });
+ScrollReveal().reveal('.coffee',{ delay: 360 });
+ScrollReveal().reveal('.card',{ delay: 360 });
 
 
-ScrollReveal({ reset: true }).reveal('.footer',{ delay: 400 });
+ScrollReveal().reveal('.footer',{ delay: 300 });

@@ -10,17 +10,34 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="switch-toggle">
-        <div class="sun">
-            <i class='bx bx-sun'></i>
-        </div>
-        <input type="checkbox" class="offscreen" id="toggle">
-        <label for="toggle" class="switch"></label>
-        <div class="moon">
-            <i class='bx bx-moon' ></i>
-        </div>
-    </div>
+
+    <button class="abrir-menu" id="abrir"><i class='bx bx-menu'></i></button>
+        
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class='bx bx-x'></i></button>
+            <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <div class="switch-toggle">
+        
+                    <div class="sun">
+                        <i class='bx bx-sun'></i>
+                    </div>
+                    <input type="checkbox" class="offscreen" id="toggle">
+                    <label for="toggle" class="switch"></label>
+                    <div class="moon">
+                        <i class='bx bx-moon' ></i>
+                    </div>
+                </div>
+                
+            </ul>
+        </nav>
+    
     <header class="intro">
+        
+
         <h1 class="hello">Hola!  <small class="manito"></small></h1>
         
         <h2 class="description">Me llamo Tomás <span class="name"> soy Frontend developer</span> intento desarrollar sitios que combinen la simpleza con lo funcional <span class="rocket-img"><img src="img/rocket.png" alt="rocket" width="30"></span></h2>
@@ -34,21 +51,23 @@
                 CV
             </a>
         </h3>
+        <a href="#about" class="down"><i class='bx bx-chevrons-down bx-fade-down' ></i></a></li>
         
     </header>
     <main class="main-container">
-        <section class="section about-me">
-            <div class="section__title">Acerca de mi</div>
-            <div class="section__content">
-                <p>Me llamo <span class="destacar">Tomás Altamirano</span>, tengo 23 años y vivo en Buenos Aires, actualmente me encuentro tratando de <span class="destacar">dominar JavaScript</span> e incursionando en React. Me gusta la combinacion de lo bonito con lo funcional, asi que trato de apuntar a eso siempre.</p>
+        <section class="section about-me" id="about">
+            <div class="section__title"  >Acerca de mi</div>
+            <div class="section__content paragraph">
+                <p>Me llamo <span class="destacar">Tomás Altamirano</span>, tengo 23 años y vivo en Buenos Aires. <br>
+                Actualmente me encuentro tratando de <span class="destacar">dominar JavaScript</span> e incursionando en React. Me gusta la combinación de lo bonito con lo funcional, así que trato de apuntar a eso siempre.</p>
                 <br>
-                <p>Mi camino hacia el frontend inicia en tiempos de pandemia cuando salieron a relucir los empleos home office, comencé haciendo mis primeras maquetas en <span class="destacar">HTML y CSS de manera autodidacta</span>, mas tarde, con cursos pagos y clases en vivo para resolver dudas que me iban surgiendo sobre Desarrollo Web y Javascript principalmente. Hoy me encuentro <span class="destacar">buscando mi primer experiencia laboral</span> con miedos y dudas pero siempre con intenciones de seguir aprendiendo</p>
+                <p>Mi camino hacia el front end inicia en tiempos de pandemia cuando salieron a relucir los empleos home office, comencé haciendo mis primeras maquetas en <span class="destacar">HTML y CSS de manera autodidacta</span>, mas tarde, con cursos pagos y clases en vivo para resolver dudas que me iban surgiendo sobre Desarrollo Web y JavaScript principalmente. Hoy me encuentro <span class="destacar">buscando mi primera experiencia laboral</span> con miedos y dudas pero siempre con intenciones de seguir aprendiendo</p>
                 <br>
                 <p><span class="destacar">Si no estoy en la computadora</span> probablemente me encuentre cocinando algo dulce acompañado de un rico café, pasando tiempo con mis mascotas o haciendo deporte</p>
             </div>
         </section>
         
-        <section class="section skills">
+        <section class="section skills" id="skills">
             <div class="section__title">Skills</div>
             <div class="section__content">
                 <div class="skills__icons">
@@ -65,7 +84,7 @@
             </div>
         </section>
 
-        <section class="section projects">
+        <section class="section projects" id="projects">
             <div class="section__title">Proyectos</div>
             <div class="section__content">
                 <div class="project ecommerce">
@@ -74,7 +93,7 @@
                     </figure>
                     <figcaption class="project__caption">
                         <div class="project__name">E-commerce</div>
-                        <p>Proyecto final del curso de Javascript de CoderHouse, cuenta con estilos de CSS puro, JavaScript y consumo de API que muestra la cotizacion del dólar en tiempo real</p>
+                        <p>Proyecto final del curso de JavaScript de CoderHouse, cuenta con estilos de CSS puro, JavaScript y consumo de API que muestra la cotización del dólar en tiempo real</p>
                     </figcaption>
                 </div>
 
@@ -84,7 +103,7 @@
                     </figure>
                     <figcaption class="project__caption">
                         <div class="project__name">Simulador de e-mails</div>
-                        <p>Proyecto para poner en practica las validaciones en un formulario que simula enviar emails implementado con Tailwind</p>
+                        <p>Proyecto para poner en práctica las validaciones en un formulario que simula enviar emails. Utilicé Tailwind para agilizar el proceso de diseño</p>
                     </figcaption>
                 </div>
                 
@@ -94,7 +113,7 @@
                     </figure>
                     <figcaption class="project__caption">
                         <div class="project__name">Pokédex</div>
-                        <p>La clasica Pokédex con el consumo de la pokéAPI para realizar busquedas de pokemons segun nombre o segun número de Pókemon</p>
+                        <p>La clásica Pokédex con el consumo de la pokéAPI para realizar búsquedas de pokémons segpun nombre o según número de Pókemon</p>
                     </figcaption>
                 </div>
             </div>
@@ -133,7 +152,7 @@
                         <span class="tech__used__item">HTML</span>
                         <span class="tech__used__item">CSS</span>
                         <span class="tech__used__item">Bootstrap</span>
-                        <span class="tech__used__item">Google map</span>
+                        <span class="tech__used__item">Google maps</span>
                     </div>
                 </div>
 
@@ -154,7 +173,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="footer__copyright">
             <h3 class="designed">Desarrollado por</h3>
             <h3 class="name">Tomás Altamirano - 2023</h3>

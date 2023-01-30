@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 /*variables*/
@@ -19,6 +20,10 @@ body {
   background-color: #171C28;
   color: #e7e7e7;
 }
+.dark-mode .abrir-menu {
+  background: #171C28;
+  color: #e7e7e7;
+}
 .dark-mode a {
   color: #fff;
 }
@@ -28,13 +33,72 @@ body {
 .dark-mode #mail-to {
   color: #e7e7e7;
 }
+.dark-mode .nav {
+  background: #171C28;
+  box-shadow: 0px 10px 20px -20px rgba(255, 255, 255, 0.8);
+}
+.dark-mode .nav .cerrar-menu {
+  background: #171C28;
+  color: #e7e7e7;
+}
+.dark-mode .nav .nav-list a {
+  color: #e7e7e7;
+}
+.dark-mode .nav a::after {
+  background-color: #fff;
+}
+.dark-mode .intro .down {
+  color: #e7e7e7;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 10px 20px -20px rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: #fff;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  font-size: 1.6rem;
+  gap: 2rem;
+}
+.nav-list a {
+  position: relative;
+  text-decoration: none;
+  color: #171C28;
+}
+.nav-list a::after {
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 100%;
+  height: 4px;
+  background: #171C28;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+  transform: translateY(20px);
+}
+.nav-list a:hover::after {
+  opacity: 1;
+  transform: translateY(15px);
+}
 
 .switch-toggle {
   display: flex;
   justify-content: end;
   align-items: center;
   position: absolute;
-  top: 20px;
   right: 30px;
 }
 .switch-toggle .sun {
@@ -81,12 +145,17 @@ input[type=checkbox]:checked + .switch {
   left: -9999px;
 }
 
+.abrir-menu, .cerrar-menu {
+  display: none;
+}
+
 .intro {
   height: 100vh;
   padding: 7rem 10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 5rem;
 }
 .intro .hello {
   font-size: 4rem;
@@ -143,6 +212,12 @@ input[type=checkbox]:checked + .switch {
 .intro .contact .intro__cv:hover {
   background-color: #007bff;
 }
+.intro .down {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #171C28;
+}
 
 .manito {
   display: inline-block;
@@ -158,7 +233,7 @@ input[type=checkbox]:checked + .switch {
 .section {
   display: flex;
   justify-content: center;
-  padding: 10rem;
+  padding: 10rem 5rem;
   font-size: 1.6rem;
 }
 .section .section__title {
@@ -174,11 +249,12 @@ input[type=checkbox]:checked + .switch {
 .section .section__content {
   line-height: 1.8;
   font-weight: 300;
-  max-width: 650px;
+  max-width: 900px;
   width: 100%;
+  font-size: 1.6rem;
 }
 .section .section__content .destacar {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 .section .section__content .skills__icons {
@@ -189,6 +265,9 @@ input[type=checkbox]:checked + .switch {
 .section .section__content .skills__icons .bx {
   font-size: 5rem;
 }
+.section .paragraph {
+  max-width: 600px;
+}
 
 .projects .project {
   display: flex;
@@ -196,10 +275,10 @@ input[type=checkbox]:checked + .switch {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 10rem;
+  margin: -5% 0 10rem 0;
 }
 .projects .project .project__img {
-  max-width: 500px;
+  max-width: 800px;
   margin: 0;
 }
 .projects .project .project__img img {
@@ -209,9 +288,10 @@ input[type=checkbox]:checked + .switch {
 }
 .projects .project .project__caption {
   flex-shrink: 0;
-  max-width: 200px;
+  max-width: 250px;
   width: 100%;
   margin: 0;
+  font-size: 1.6rem;
 }
 .projects .project .project__caption .project__name {
   font-size: 1.8rem;
@@ -319,11 +399,21 @@ input[type=checkbox]:checked + .switch {
   .intro .contact {
     font-size: 1.8rem;
   }
+  .main-container .section {
+    flex-direction: column;
+    align-items: center;
+  }
   .project .project__caption p {
     font-size: 1.6rem;
   }
   .other-projects .section__title {
     margin-bottom: 20px;
+  }
+  .footer {
+    padding: 3rem 2rem;
+  }
+  .footer .footer__links a .text {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -358,14 +448,23 @@ input[type=checkbox]:checked + .switch {
     max-width: 400px;
   }
   .footer {
-    padding: 3rem 2rem;
+    align-items: center;
+    justify-content: center;
   }
   .footer .footer__links a .text {
-    font-size: 1.2rem;
+    display: none;
+  }
+  .footer .footer__links a .bx {
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+  .footer .footer__copyright {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
   .intro {
+    margin-top: 0;
     padding: 5rem 2rem;
   }
   .intro .hello {
@@ -376,6 +475,53 @@ input[type=checkbox]:checked + .switch {
   }
   .intro .mail .bx {
     display: none;
+  }
+  .abrir-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    border: none;
+    font-size: 3rem;
+    background: #fff;
+    padding: 2rem;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    justify-content: start;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: initial;
+    height: auto;
+    margin: 0;
+    padding: 2rem;
+    width: 50%;
+    align-items: end;
+    flex-direction: column;
+    gap: 5rem;
+    transition: 0.5s;
+  }
+  .nav .cerrar-menu {
+    display: block;
+    border: none;
+    font-size: 3rem;
+    background: #fff;
+  }
+  .nav .switch-toggle {
+    position: initial;
+  }
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+    gap: 6rem;
   }
   .section {
     padding: 5rem 3rem;
