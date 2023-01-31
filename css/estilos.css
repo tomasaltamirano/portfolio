@@ -221,7 +221,7 @@ input[type=checkbox]:checked + .switch {
 
 .manito {
   display: inline-block;
-  background-image: url("../img/hand.png");
+  background-image: url("../img/hand.webp");
   vertical-align: text-top;
   background-size: contain;
   background-repeat: no-repeat;
