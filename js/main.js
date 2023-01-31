@@ -28,7 +28,7 @@ ScrollReveal().reveal('.ecommerce',{ delay: 360 });
 ScrollReveal().reveal('.simulador',{ delay: 360 });
 ScrollReveal().reveal('.pokedex',{ delay: 360 });
 
-ScrollReveal({ reset: true }).reveal('.alura',{ delay: 360 });
+ScrollReveal().reveal('.alura',{ delay: 360 });
 ScrollReveal().reveal('.coffee',{ delay: 360 });
 ScrollReveal().reveal('.card',{ delay: 360 });
 
