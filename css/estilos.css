@@ -50,6 +50,9 @@ body {
 .dark-mode .intro .down {
   color: #e7e7e7;
 }
+.dark-mode .intro .contact .intro__cv {
+  color: #e7e7e7;
+}
 
 .nav {
   display: flex;
@@ -207,10 +210,12 @@ input[type=checkbox]:checked + .switch {
   border: 1px solid #007bff;
   border-radius: 5px;
   padding: 10PX;
+  color: #171C28;
   margin-left: 10px;
 }
 .intro .contact .intro__cv:hover {
   background-color: #007bff;
+  color: #fff;
 }
 .intro .down {
   text-align: center;
@@ -477,7 +482,7 @@ input[type=checkbox]:checked + .switch {
     display: none;
   }
   .abrir-menu {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     display: inline-block;
@@ -491,7 +496,7 @@ input[type=checkbox]:checked + .switch {
     visibility: hidden;
     justify-content: start;
     align-items: flex-end;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -503,6 +508,7 @@ input[type=checkbox]:checked + .switch {
     align-items: end;
     flex-direction: column;
     gap: 5rem;
+    box-shadow: -10px 0px 20px -20px rgba(53, 53, 53, 0.8);
     transition: 0.5s;
   }
   .nav .cerrar-menu {

@@ -35,7 +35,7 @@ body{
   }
 
   a{
-          color: #fff;
+    color: #fff;
   }
    .other-projects{
     .project{
@@ -68,8 +68,15 @@ body{
   
   .intro{
     .down{
-    color: $fuente-dark;
-  }
+      color: $fuente-dark;
+    
+    }
+    .contact{
+      .intro__cv{
+      color: $fuente-dark;
+    }
+    }
+    
   }
   
 }

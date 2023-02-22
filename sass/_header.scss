@@ -68,12 +68,12 @@
       border: 1px solid #007bff;
       border-radius: 5px;
       padding: 10PX;
-      // color: #E7E7E7;
+      color: $color-fuente-light;
       margin-left: 10px;
       
       &:hover{
         background-color: #007bff;
-        // border-color: #E7E7E7;
+        color: #fff;
       }
     }
   }
